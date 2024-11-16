@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Baskerville', serif;
+  color: linen;
+  background-color: rgb(20, 30, 40);
+}
+h1{
+  font-family: 'Anton', sans-serif;
+}
+h2, h3, h4, h5, h6{
+  font-family: 'Raleway', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: linen;
+}
+main{
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+  row-gap: 3rem;
+}
+
+.heading{
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero{
+  grid-column: 1/3;
+}
+img{
+  width: 100%;
+  object-fit: cover;
+}
+.hero-title{
+  color: orangered;
+  font-size: 8rem;
+  text-align: center;
+}
+.hero-subtitle{
+  color: orangered;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.author{
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+.author a:hover{
+  background-color: rgb(69, 100, 21);
+}
+.publish-date{
+  color: gray;
+}
+.social-icons{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 3rem;
+  align-items: center;
+  grid-auto-flow: column;
+}
+.text{
+  grid-column: 2/3;
+  column-width: 25rem;
+  text-align: justify;
+  font-size: 1.8rem;
+  letter-spacing: 0.6px;
+}
+.first-para::first-letter{
+  color: orangered;
+  float: left;
+  font-size: 6.5rem;
+  margin-right: 1rem;
+}
+.quote{
+  color: rgb(0, 190, 239);
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 10px;
+}
+.quote::before{
+  content: '" ';
+}
+.quote::after{
+  content: ' "';
+}
+.text-with-imgs{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3rem;
+  margin-bottom: 3rem;
+}
+.list-title, .list-subtitle{
+  color: rgb(0, 190, 239);;
+}
+.lists{
+  list-style-type: none;
+  margin-top: 2rem;
+}
+.lists li{
+  margin-bottom: 1.5rem;
+}
+.img-wrapper{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, min-content);
+  gap: 2rem;
+  align-items: center;
+}
+.image-1, .image-3{
+  grid-column: 1/ -1;
+}
+
